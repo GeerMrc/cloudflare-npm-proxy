@@ -3,8 +3,8 @@ const CUSTOM_DOMAINS = {
     'yarn.example.com': 'https://registry.yarnpkg.com',
     // 你可以添加更多的镜像地址
 };
-
-const DEFAULT_UPSTREAM = CUSTOM_DOMAINS['npm.example.com'];
+//npm.example.com请自行更改成自己的https://npmirror.aiword.dev
+const DEFAULT_UPSTREAM = CUSTOM_DOMAINS['npmirror.aiword.dev'];
 
 const json = (data = {}, code = 200, headers = {}) => {
     return new Response(JSON.stringify(data), {
